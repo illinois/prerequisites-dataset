@@ -1,7 +1,7 @@
 # University of Illinois' Course Prerequisites
 A collection of the prerequisites for all courses offered by the University of Illinois.
 
-You can download the full dataset as a [CSV file.](./uiuc-prerequisites.csv)
+You can download the full dataset as a [CSV file.](https://raw.githubusercontent.com/illinois/prerequisites-dataset/master/uiuc-prerequisites.csv)
 
 ## Data Format
 The first row of the CSV file contains column headers. Every other row contains data.

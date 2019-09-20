@@ -6,9 +6,9 @@ You can download the full dataset as a [CSV file.](https://raw.githubusercontent
 ## Data Format
 The first row of the CSV file contains column headers. Every other row contains data.
 
-There is a single row for every course. The first cell contains the course code (i.e. "AAS 100" or "CS 125"), the second contains the number of prerequisites that correspond to that course, and all subsequent cells contain the course codes of those prerequisites.
+There is a single row for every course. The first cell contains the course code (i.e. "AAS 100" or "CS 125"), the second contains the number of prerequisites that correspond to that course, and all subsequent cells contain the course codes of those prerequisites under 0-indexed numbered headers.
 
-| Course  | PrerequisiteNumber | Prerequisites |   |   |   |
+| Course  | PrerequisiteNumber | 0 | 1 | 2 | 3 |
 | ------- | ------------------ | - | - | - | - |
 | AAS 100 | 0 |   |   |   |   |
 | ... |   |   |   |   |   |

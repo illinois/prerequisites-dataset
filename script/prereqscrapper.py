@@ -46,7 +46,7 @@ for x in range(0, rows):
             course_dict[courses.loc[x, 'Subject'] + " " + str(courses.loc[x, 'Number'])].prereqs.extend(course_dict[code].prereqs)
 
 # save course prereqs into new csv
-w = csv.writer(open("data/uiuc-prerequisites.csv", "w"))
+w = csv.writer(open("../uiuc-prerequisites.csv", "w"))
 w.writerow(["Course", "PrerequisiteNumber", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"])
 for title in sorted(course_dict):
     prereq_number = len(course_dict[title].prereqs)

@@ -15,3 +15,16 @@ def seeCode(st):
         return code.groups(1)[0].replace('\xa0', ' ') # the docs say .groups(1) should be a string but it's a tuple so whatever
     else:
         return None
+
+
+# return a list of course codes when the input string includes "Same as [Course]."
+def sameAsCode(st):
+    if "Same as" in st:
+        # get the string starting from "Same as" and ending in "."
+        starts = st.find("Same as")
+        ends = st.find(".", starts)
+        text = st[starts:ends]
+
+        return containsCourseCodes(text)
+    else:
+        return []
